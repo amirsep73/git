@@ -26,10 +26,19 @@
 
 </div>
   
-<div class="container mt-5">
+<div class="container mt-4">
   <div class="row">
     <div class="col-sm-12">
-      <h3>دستورات پایه</h3>
+        <a type="button" href="#base" class="btn btn-primary">Base</a>
+        <a type="button" href="#log" class="btn btn-secondary">Log</a>
+        <a type="button" href="#clone" class="btn btn-success">Clone</a>
+        <a type="button" href="#branch" class="btn btn-danger">Branch</a>
+        <a type="button" href="#remote" class="btn btn-warning">Remote</a>
+        <a type="button" href="#checkout" class="btn btn-info">Checkout</a>
+        <a type="button" href="#revert" class="btn btn-dark">revert</a>
+        <a type="button" href="#reset" class="btn btn-primary">reset</a>
+        <br><br>
+      <h3 id="base">دستورات پایه</h3>
         <p>اضافه کردن گیت به یک پروژه:</p>
         <pre class="bg-dark text-light p-2 text-start" dir="ltr">git init</pre>
         <p>مشاهده وضعیت:</p>
@@ -41,7 +50,7 @@
         <p>کامیت کردن:</p>
         <pre class="bg-dark text-light p-2 text-start" dir="ltr">git commit -m "CommitNote"</pre>
       <br><br>
-      <h3>لاگ گرفتن</h3>
+      <h3 id="log">لاگ گرفتن</h3>
         <p>دستور اصلی</p>
         <pre class="bg-dark text-light p-2 text-start" dir="ltr">git log</pre>
         <p>لاگ با اطلاعات بیشتر:</p>
@@ -50,22 +59,24 @@
         <p>نمایش لاگ ها در یک خط:</p>
         <pre class="bg-dark text-light p-2 text-start" dir="ltr">git log --oneline</pre>
        <br><br>
-       <h3>کلون کردن</h3>
+       <h3 id="clone">کلون کردن</h3>
         <p class="bg-light p-3">انتقال یک پروژه از منبع خارجی به لوکال به صورت کامل ، در اینجا مثال گیت هاب می باشد:</p>
         <pre class="bg-dark text-light p-2 text-start" dir="ltr">git clone "addres project in github" "new name project in my system"</pre>
 
 
        <br><br>
-       <h3>Branch</h3>
+       <h3 id="branch">Branch</h3>
         <p>نمایش همه Branch ها:</p>
         <pre class="bg-dark text-light p-2 text-start" dir="ltr">git branch</pre>
         <p>یا</p>
         <pre class="bg-dark text-light p-2 text-start" dir="ltr">git branch --list</pre>
         <p>حذف یک Branch:</p>
         <pre class="bg-dark text-light p-2 text-start" dir="ltr">git branch -d "BranchName"</pre>
+        <p>فعال کردن یک Branch: </p>
+        <pre class="bg-dark text-light p-2 text-start" dir="ltr">git checkout "Branch Name"</pre>
 
        <br><br>
-       <h3>Push , Remote  و pull</h3>
+       <h3 id="remote">Push , Remote  و pull</h3>
         <p>نمایش همه ریموت ها:</p>
         <pre class="bg-dark text-light p-2 text-start" dir="ltr">git remote</pre>
         <p>اضافه کردن یک ریموت جدید:</p>
@@ -76,9 +87,17 @@
         <pre class="bg-dark text-light p-2 text-start" dir="ltr">git push "remote name" "branch name in remote" </pre>
         <p>حدف یک ریموت:</p>
         <pre class="bg-dark text-light p-2 text-start" dir="ltr">git branch -d "BranchName"</pre>
+
+       <br><br>
+       <h3 id="checkout">Checkout</h3>
+        <p>نمایش همه ریموت ها:</p>
+        <pre class="bg-dark text-light p-2 text-start" dir="ltr">git remote</pre>
+
         <br><br>
         <p>در حال تکمیل شدن می باشد...</p>
         <br><br>
+
+
     </div>
   </div>
 </div>
