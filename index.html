@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
+
   <title>دستورات ضروری گیت Git</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,14 +22,39 @@
   <img src="logo.svg" height="120">
   <h1>دستورات ضروری گیت</h1><br>
   <p>در این صفحه دستورات کاربردی و ضروری گیت قرار داده می شود</p>
+
 </div>
   
 <div class="container mt-5">
   <div class="row">
     <div class="col-sm-12">
       <h3>دستورات پایه</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <p>اضافه کردن گیت به یک پروژه.</p>
+        <pre class="bg-dark text-light p-2 text-start" dir="ltr">git init</pre>
+        <p>مشاهده وضعیت</p>
+        <pre class="bg-dark text-light p-2 text-start" dir="ltr">git status</pre>
+        <p>اضافه کردن</p>
+        <pre class="bg-dark text-light p-2 text-start" dir="ltr">git add "FileName"</pre>
+        <p>اضافه کردن همه تغییرات به صورت یکجا</p>
+        <pre class="bg-dark text-light p-2 text-start" dir="ltr">git add .</pre>
+        <p>کامیت کردن</p>
+        <pre class="bg-dark text-light p-2 text-start" dir="ltr">git commit -m "CommitNote"</pre>
+      <br><br>
+      <h3>لاگ گرفتن</h3>
+        <p>دستور اصلی</p>
+        <pre class="bg-dark text-light p-2 text-start" dir="ltr">git log</pre>
+        <p>لاگ با اطلاعات بیشتر</p>
+        <pre class="bg-dark text-light p-2 text-start" dir="ltr">git log --stat</pre>
+        <pre class="bg-primary text-light p-2 text-start" dir="ltr">note: press q key for exit.</pre>
+        <p>نمایش لاگ ها در یک خط</p>
+        <pre class="bg-dark text-light p-2 text-start" dir="ltr">git log --oneline</pre>
+       <br><br>
+       <h3>کلون کردن</h3>
+        <p class="bg-light p-3">انتقال یک پروژه از منبع خارجی به لوکال به صورت کامل ، در اینجا مثال گیت هاب می باشد.</p>
+        <pre class="bg-dark text-light p-2 text-start" dir="ltr">git clone "addres project in github" "new name project in my system"</pre>
+
+
+
     </div>
   </div>
 </div>
